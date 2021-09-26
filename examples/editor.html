@@ -7,11 +7,36 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<title>abcjs: Basic Editor Demo</title>
 	<script src="../bin/abcjs_basic_5.7.0-min.js" type="text/javascript"></script>
+	
+	<style>
+		.abcjs-p0, .abcjs-p7 {
+			fill: red;
+		}
+		.abcjs-p1, .abcjs-p8 {
+			fill: sandybrown;
+		}
+		.abcjs-p2, .abcjs-p9 {
+			fill: gold;
+		}
+		.abcjs-p3, .abcjs-p10 {
+			fill: green;
+		}
+		.abcjs-p4, .abcjs-p11 {
+			fill: lightskyblue;
+		}
+		.abcjs-p5, .abcjs-p12 {
+			fill: blue;
+		}
+		.abcjs-p6, .abcjs-p13 {
+			fill: purple;
+		}
+	</style>
+	
 	<script type="text/javascript">
 		window.onload = function() {
 			new ABCJS.Editor("abc", { canvas_id: "paper",
 				warnings_id: "warnings",
-				abcjsParams: {}
+				abcjsParams: {add_classes: true}
 			});
 		}
 
