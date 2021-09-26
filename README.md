@@ -1,4 +1,4 @@
-![abcjs](https://cdn.rawgit.com/paulrosen/abcjs/master/docs/abcjs_comp_extended_08.svg)
+![abcjs](demo_colored.jpg)
 
 # Javascript library for rendering standard music notation in a browser.
 
