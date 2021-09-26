@@ -195,6 +195,8 @@ AbsoluteElement.prototype.draw = function (renderer, bartop) {
 			}
 		}
 	}
+	///klass += ' pitch_'+Math.round(this.x);
+	///console.error(klass);
 	var g = renderer.endGroup(klass);
 	if (g)
 		this.elemset.push(g);
@@ -202,6 +204,8 @@ AbsoluteElement.prototype.draw = function (renderer, bartop) {
 		this.setClass("mark", "", "#00ff00");
 	if (this.hint)
 		this.setClass("abcjs-hint", "", null);
+	///if (klass && this.type === 'note')
+	///	this.setClass("", "", "green");
 	var opacity = /*ABCJS.write.debugPlacement*/false ? 0.3 : 0; // Create transparent box that encompasses the element, and not so transparent to debug it.
 	var target = renderer.printShadedBox(this.x, renderer.calcY(this.top), this.w, renderer.calcY(this.bottom)-renderer.calcY(this.top), "#000000", opacity);
 	var self = this;
